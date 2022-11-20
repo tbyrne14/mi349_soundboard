@@ -1,16 +1,16 @@
 const sounds = ['boing', 'cash register', 'cheering']
 
 sounds.forEach(sound => {
-    const btn = document.createElement('button')
-    btn.classList.add('btn')
+    const butt = document.createElement('button')
+    butt.classList.add('butt')
 
-    btn.innerText = sound 
+    butt.innerText = sound 
 
-    btn.addEventListener('click', () => {
+    butt.addEventListener('click', () => {
         document.getElementById(sound).play()
     })
     
-    document.getElementById('buttons').appendChild(btn)
+    document.getElementById('buttons').appendChild(butt)
 
 
 })
