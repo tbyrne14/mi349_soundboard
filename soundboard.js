@@ -5,9 +5,12 @@ sounds.forEach(sound => {
     btn.classList.add('btn')
 
     btn.innerText = sound 
-    document.getElementById('buttons').appendChild(btn)
 
     btn.addEventListener('click', () => {
-        document.getElementById(sound).onplay()
+        document.getElementById(sound).play()
     })
+    
+    document.getElementById('buttons').appendChild(btn)
+
+
 })
